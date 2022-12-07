@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!doctype html>
+    <title>Shane Fleming's Online Resume</title>
+    <style>
+    body { 
+      display: grid;
+      grid-template-areas: 
+        "header header header"
+        "nav article ads"
+        "nav footer footer";
+      grid-template-rows: 200px 2fr 70px;  
+      grid-template-columns: 50% 1fr 25%;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      }  
+    header, footer, article, nav, div {
+      padding: .2em;
+      background: rgb(226, 226, 217);
+      }
+    #pageHeader {
+      grid-area: header;
+      text-align: center;
+      }
+    
+      }
+    #mainArticle { 
+      grid-area: article;      
+      }
+    #mainNav { 
+      grid-area: nav; 
+      }
+    #siteAds { 
+      grid-area: ads; 
+      } 
+    
+    @media all and (max-width: 600px) {
+      body { 
+        grid-template-areas: 
+          "header"
+          "article"
+          "ads"
+          "nav"
+          "footer";
+        grid-template-rows: 80px 1fr 70px 1fr 70px;  
+        grid-template-columns: 1fr;
+     }
+    }
+    </style>
+    <body>
+      <header id="pageHeader"> <h1>Shane Fleming</h1>
+        <div><p>Devoted team player with a calling to help organizations fight the disease of addiction and eradicate human trafficking. <br>
+            Results-oriented with seven years of nonprofit experience and an intimate knowledge of twelve-step & social model-driven treatment programs, relationship management, and grants administration. <br>
+             Motivated to leverage my experience, abilities, and passion to join your team!</p>
+        </div>
+      </header>
+      <article id="mainArticle"> <h3>Current Responsibilities</h3>
+        <div>
+            <ul>
+                <li>Established and implemented departmental policies, goals, objectives, and procedures with the Executive Director, Board Members, Executive Staff Members, and Support Staff Members.</li>
+                <li>Reviewed financial statements, sales or activity reports, and other performance data to measure productivity and effectiveness.</li>
+                <li>Serve as a liaison to all funding agencies or organizations, developing collaborative relationships with representatives</li>
+                <li>Coordinated and directed financial activities to fund operations, maximize investments and increase efficiency.</li>
+                <li>Solicited cash, in-kind donations, and sponsorships from individuals, businesses, and government agencies.</li>
+                <li>Attended community events, meetings, and conferences to promote organizational goals and solicit donations and sponsorships.</li>
+                <li>Managed and directed large-scale social enterprises, including the Beacon House Thrift Shops and BHASP Catering. </li>
+                <li>Helped build and scale fundraising activities, such as annual giving campaigns, events, and enterprises.</li>
+                <li>Developed various projects and fundraising initiatives and successfully sought and secured funding 
+                    for various initiatives, including capital/capacity building, programs/projects, and unrestricted/general operating opportunities. </li>
+              </ul>
+        </div>
+      </article>
+
+      <nav id="mainNav">
+            <div><img src="smfpic.png" alt="Shane Fleming">
+            </div>
+      </nav>
+      <div id="siteAds"> <h3>Skills</h3>
+        <div>
+            <ul>
+                <li>Grants Writing & Management</li>
+                <li>Social Enterprise Development </li>
+                <li>Strategic Partnership Development</li>
+                <li>Excellent Interpersonal Skills</li>
+                <li>Leadership and People Development</li>
+                <li>Department Collaboration</li>
+                <li>Program/Project Administration</li>
+                <li>Customer Service Oriented </li>
+                <li>Marketing Strategy Development</li>
+                <li>Innovation Strategies </li>
+              </ul>
+              
+              
+        </div>
+
+
+      </div>
+      <footer id="pageFooter">Navigation</footer>
+    </body>
